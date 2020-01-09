@@ -1,0 +1,82 @@
+*{margin:0; padding:0; font-family:arial;}
+
+section{width:100%;height:1000px;float:left;}
+
+/* Global */
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+
+}
+
+
+/* BACKGROUND OF EACH PAGE*/
+
+#pageA{background: url('images/stlouis3.jpg') no-repeat -80px -100px;}
+#pageB{background: url('images/hongkong_60.jpg') no-repeat -530px -1000px;}
+#pageC{background: url('images/img4_60.jpg') no-repeat -530px -250px;}
+#pageD{background: url('images/img5_60.jpg') no-repeat -530px -750px;}
+#pageE{background: url('images/img1_60.jpg') no-repeat -530px -500px;}
+
+/* NAVIGATION BAR */
+
+nav{width:100%;position:fixed;z-index: 10;top:20px;}
+
+ul{width:fit-content;margin:auto;list-style: none;}
+
+ul li{float:left; margin-right: 30px;}
+
+ul li a{color: #fff; text-decoration: none; text-shadow: 1px 1px 1px #000000;}
+
+ul li a:hover{text-decoration:underline; color:black;}
+
+h1{color:#fff; text-align: center; margin-top:150px; margin-right:40px; font-size: 50px; 
+	text-shadow: 3px 3px 5px #000000;}
+
+#pageA img{padding-left:40px; padding-top:10px; float:left;
+	width:45px; height:45px; position:fixed;z-index: 5}
+
+/* AARON LI HOMEPAGE */
+
+#pageA h1 a{ text-decoration:none; color:white; }
+#pageA h1 a:hover{color:black;}
+
+
+
+
+/* ABOUT PAGE*/
+
+
+
+
+/* PROJECTS */
+
+
+
+
+/* RESUME */
+
+
+
+
+
+/*CONTACT*/
+
+
+
+
+
+
+/*     SOCIAL MEDIA BUTTONS    */
+.socialmedia {float:left; padding:1px; margin-top: 2px; margin-left:100px;}
+
+.socialmedia a{text-decoration: none;}
+
+/*       FOOTER       */
+
+/*footer p {font-size:15px; padding:25px; margin-bottom: 0px; color:#000000; background-color:#ffe9ec;
+			text-align: right;}*/
+
+
+footer a:hover{opacity: 0.6;}
