@@ -6,7 +6,7 @@
 
 /*HEADER*/ 
 .masthead {
-  height: 100vh;
+  height: 150vh;
   min-height: 500px;
   background-image: url('images/5stlouis.jpg');
   background-size: cover;
@@ -40,8 +40,8 @@
 
 /*SECTIONS*/ 
 section {
-  padding-top: 100px;
-  padding-bottom: 500px;
+  padding-top: 200px;
+  padding-bottom: 550px;
 }
 
 
