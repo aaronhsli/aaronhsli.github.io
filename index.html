@@ -1,108 +1,135 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang = "en">
+<head>
 
-	<head>
-		<meta charset = "utf-8">
-   	 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<meta name = "description" content = "Aaron Li Personal Website">
-		<meta name = "author" content = "Aaron Li">
-		<meta name = "keywords" content = "personal web design, web, design">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Aaron Li, Website">
+  <meta name="author" content="Aaron Li">
 
+  <title>Aaron Li</title>
 
-		<link href="styles.css" type="text/css" rel="stylesheet">
-		<script async src="./scripts.js"></script>
-		<title> Aaron Li </title>
-		<link rel = "icon" href = "./images/mylogo_transparent.png">
-	
-	</head>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
 
+</head>
 
-	<body>
-	
+<body id="page-top">
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="./images/translogo2.png"/></a>
 
-	<!-- FIRST PAGE  -->
-		<section id="pageA">
-		
-			<img src = "./images/mylogo_transparent.png"/>
-			<h1><a href = "https://www.youtube.com/watch?v=6usx5vS238Y" target = "_blank"> Aaron Li </a></span></h1>
-			<nav>
-				<ul>
-					<li><a href="#pageA"> Home</li></a>
-					<li><a href="#pageB"> About</li></a>
-					<li><a href="#pageC"> Projects</li></a>
-					<li><a href="#pageD"> Resume</li></a>
-					<li><a href="#pageE"> Contact</li></a>
-				</ul>
-			
-			</nav>
-			
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#extras">ExtraCurriculars</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+	<header>
+	  <div class="overlay"></div>
+	  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+	    <source src="./images/dahyun.mp4" type="video/mp4">
+	  </video>
+	  <div class="container h-100">
+	    <div class="d-flex h-100 text-center align-items-center">
+	      <div class="w-100 text-white">
+	        <h1 class="display-3">Aaron Li</h1>
+	        <p class="lead mb-0">3rd Year McMaster Mechatronics Student</p>
+	      </div>
+	    </div>
+	  </div>
+	</header>
 
-		</section>
-	
+  <section id="about" class = "bg-purple">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About Me</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <ul>
+            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<!-- SECOND PAGE  -->
+  <section id="projects" class="bg-nice">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Projects</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<section id="pageB">
-			
-			<h1>About</h1>
-			
-			<p id="demo">A Paragraph</p>
-			<button type="button" onclick="myFunction()">Try it</button>
+  <section id="contact" class = "bg-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Resume</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		</section>
-			
+  <section id="extras" class = "bg-sblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Extracurriculars</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="py-5 bg-blue">
+    <div class="container">
+      <p class="m-0 text-right text-white">Copyright &copy; Aaron Li 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-	<!-- THIRD PAGE  -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-		<section id="pageC">
-			<h1>Projects</h1>
-		</section>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
-	<!-- FOURTH PAGE  -->
-
-		<section id="pageD">
-			<h1>Resume</h1>
-		</section>
-
-	<!-- FIFTH PAGE  -->
-
-
-		<section id="pageE">
-			<h1>Contact</h1>
-		</section>
-
-	
-	</body>
-
-	<!-- FOOTER  -->
-
-	<footer>
-			<!-- SOCIAL MEDIA  -->
-		
-		<div class="socialmedia">
-  			
-    		<a href="https://www.facebook.com/aaronx987" target="top">
-    	  		<img src="./images/facebookt.png" style="max-height: 32px;" alt="Facebook">
-   			</a>
-    		<a href="https://www.linkedin.com/in/aaronhsli" target="top">
-     			<img src="./images/linkedin3.png" style="max-height: 32px;" alt="Linkedin">
-    		</a>
-    		<a href="https://github.com/aaronhsli" target="top">
-    			<img src="./images/github.png" style="max-height: 32px;" alt="Github">
-    		</a>
-    		<a href="mailto:li.aaron.hs@gmail.com?Subject=Website%20Inquiry" target="top">
-    			<img src="./images/email.png" style="max-height: 32px;" alt="Email">
-    		</a>
-		</div>
-
-	</footer>
+</body>
 
 </html>
