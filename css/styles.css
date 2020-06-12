@@ -6,57 +6,14 @@
 
 /*HEADER*/ 
 
-header {
-  position: relative;
-  background-color: black;
+.masthead {
   height: 100vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+  min-height: 500px;
+  background-image: url('images/stlouis3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
-
-
-
 
 /* BODY */
 #page-top{
@@ -78,20 +35,24 @@ section {
 
 /*COLOURS FOR BACKGROUNDS*/
 
-.bg-purple{
-	background-color: #7a00cc;
+.bg-hkbeach{
+	background: url('images/img4_60.jpg') no-repeat center; background-size: cover;
 }
 
-.bg-blue{
-	background-color: #1a53ff;
+.bg-stanley{
+	background: url('images/1hk.jpg') no-repeat center; background-size: cover;
 }
 
-.bg-sblue{
-	background-color: #6b00b3;
+.bg-banff{
+	background: url('images/img1_60.jpg') no-repeat center; background-size: cover;;
 }
 
-.bg-nice{
-	background-color: #c266ff;
+.bg-peak{
+	background: url('images/img5_60.jpg') no-repeat center; background-size: cover;
+}
+
+.bg-foot{
+	background-color: white;
 }
 
 
@@ -103,3 +64,15 @@ section {
 .text-right{
 	text-align: right!important;
 }
+.text-black{
+	color: black;
+}
+
+
+
+/*     SOCIAL MEDIA BUTTONS    
+.socialmedia {float:right; padding:1px; margin-top: 2px; margin-left:0px;}
+
+.socialmedia a{text-decoration: none;}
+
+footer a:hover{opacity: 0.6;} */
