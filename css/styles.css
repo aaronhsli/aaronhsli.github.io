@@ -9,7 +9,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('images/stlouis3.jpg');
+  background-image: url('images/5stlouis.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,15 +28,15 @@
 
 /*SECTIONS*/ 
 section {
-  padding-top: 200px;
-  padding-bottom: 400px;
+  padding-top: 100px;
+  padding-bottom: 500px;
 }
 
 
 /*COLOURS FOR BACKGROUNDS*/
 
 .bg-hkbeach{
-	background: url('images/img4_60.jpg') no-repeat center; background-size: cover;
+	background: url('images/3beach.jpg') no-repeat center; background-size: cover;
 }
 
 .bg-stanley{
@@ -44,11 +44,11 @@ section {
 }
 
 .bg-banff{
-	background: url('images/img1_60.jpg') no-repeat center; background-size: cover;;
+	background: url('images/2banff.jpg') no-repeat center; background-size: cover;;
 }
 
 .bg-peak{
-	background: url('images/img5_60.jpg') no-repeat center; background-size: cover;
+	background: url('images/4peak.jpg') no-repeat center; background-size: cover;
 }
 
 .bg-foot{
