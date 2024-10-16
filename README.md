@@ -1,2 +1,2 @@
 # aaronhsli.github.io
-My Personal Website .. finally. 
+personal website. 
