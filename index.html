@@ -6,19 +6,69 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+          <!-- Preloader with Image -->
+    <style>
+			/* Style for the loader */
+			#loader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #935d8c; /* Set a background color to match your design */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 1000;
+			}
+
+			/* Fade-out effect for the preloader image */
+			.fade-out {
+				animation: fadeOut 1.5s ease forwards; /* Duration of fade-out */
+			}
+
+			/* Fade-out animation */
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+
+			/* Style for main content fade-in */
+			#content.fade-in {
+				animation: fadeIn 1.5s ease forwards;
+				opacity: 0;
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+		<!-- Preloader with Image -->
+		<div id="loader">
+			<img src="images/logo.png" alt="Loading" id="preload-image">
+		</div>
 
-		<!-- Wrapper -->
+		<!-- Wrapper (Main Content) -->
+		<div id="content" style="display:none;">
 			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.png" alt="" /></span>
-						<h1>Aaron Li</h1>
-						<p> A software and data engineer, passionate about building AI-powered safety systems 
-                            that empower all with accessible, actionable insights and serve the greater social good. </p>
-					</header>
+				
+                <!-- Header -->
+				<header id="header" class="alt">
+					<h1>Aaron Li</h1>
+					<p>A software and data engineer, passionate about building AI-powered safety systems that empower all with accessible, actionable insights and serve the greater social good.</p>
+				</header>
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -171,6 +221,29 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        </div>
+    </div>
 
-	</body>
+        <!-- JavaScript for the fade-in/out effect -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Get the loader and content elements
+                var loader = document.getElementById("loader");
+                var content = document.getElementById("content");
+
+                // Simulate a delay for loading (optional)
+                setTimeout(function() {
+                    // Add the fade-out class to the loader image
+                    loader.classList.add('fade-out');
+
+                    // Wait for the fade-out animation to finish before showing the content
+                    setTimeout(function() {
+                        loader.style.display = "none"; // Hide the loader completely
+                        content.style.display = "block"; // Show the main content
+                        content.classList.add('fade-in'); // Add fade-in class to content
+                    }, 1500); // Match the duration of the fade-out animation
+                }, 2000); // Initial delay for loading effect
+            });
+        </script>
+    </body>
 </html>
