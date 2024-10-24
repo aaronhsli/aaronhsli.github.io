@@ -24,6 +24,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* Style the scrollbar width */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width if needed */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%); /* Match the gradient from the body */
+}
+
+/* Style the scrollbar thumb with a solid color */
+::-webkit-scrollbar-thumb {
+    background: #5f4d93; /* Use a solid color that matches the gradient */
+    border-radius: 50px; /* Make the thumb oval */
+}
+
+/* Optional: Change the thumb color when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: #e37682; /* Change to a color that complements the thumb */
+}
+
 body {
 	line-height: 1;
 }
@@ -115,7 +136,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #5f4d93;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
