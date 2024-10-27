@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -28,6 +22,34 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+#header {
+	text-align: center;
+}
+
+/* Fade-in and fade-out animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Logo container - fades in, stays visible briefly, then fades out */
+#logo-container {
+    opacity: 0;
+    animation: fadeIn 1s forwards, fadeOut 1s forwards 2s;
+}
+
+/* Header content - initially hidden, fades in after logo disappears */
+#header-content {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s; /* Wait for logo fade-out to complete */
+}
 
 body {
 	line-height: 1;
