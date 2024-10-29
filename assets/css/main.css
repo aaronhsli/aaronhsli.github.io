@@ -55,6 +55,16 @@ body {
 	line-height: 1;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar in Firefox */
+body {
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+}
+
 ol, ul {
 	list-style: none;
 }
