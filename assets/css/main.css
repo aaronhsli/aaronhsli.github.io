@@ -38,18 +38,33 @@ footer, header, hgroup, menu, nav, section {
     to { opacity: 0; }
 }
 
-/* Logo container - fades in, stays visible briefly, then fades out */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 #logo-container {
+    animation: fadeInOut 3s forwards; 
+}
+/*
+#header-content, #main {
+    opacity: 0;
+    transition: opacity 1s ease;
+} */
+
+
+/* #logo-container {
     opacity: 0;
     animation: fadeIn 1s forwards, fadeOut 1s forwards 2s;
 }
 
-/* Header content - initially hidden, fades in after logo disappears */
 #header-content {
     opacity: 0;
     animation: fadeIn 1s forwards;
-    animation-delay: 3s; /* Wait for logo fade-out to complete */
-}
+    animation-delay: 3s; 
+} */
 
 body {
 	line-height: 1;

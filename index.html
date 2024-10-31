@@ -18,19 +18,19 @@
 						<div id="logo-container">
 							<span class="logo"><img src="images/logo.png" alt="Logo" /></span>
 						</div>
-						<h1>Aaron Li</h1>
-						<p>A software and data engineer, passionate about building AI-powered safety systems that empower all with accessible, actionable insights and serve the greater social good.</p>
+						<div id="header-content" style="display: none;">
+							<h1>Aaron Li</h1>
+							<p>A software and data engineer, passionate about building AI-powered safety systems.</p>
+						</div>
 					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
+				<!-- Header -->	
+					<nav id="nav" style="display: none;">
 						<ul>
-							<li><a href="#about" class="active"> &nbsp &nbsp About </a></li>
+							<li><a href="#about" class="active">About</a></li>
 							<li><a href="#work">Projects</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
-
 				<!-- Main -->
 					<div id="main">
 
@@ -132,12 +132,34 @@
 			
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
+					// Disable scrolling initially
+					document.body.style.overflow = "hidden";
+			
+					setTimeout(function() {
+						// Remove the logo container
+						document.getElementById("logo-container").style.display = "none";
+			
+						// Display and fade in header content, nav, and main content
+						document.getElementById("header-content").style.display = "block";
+						document.getElementById("nav").style.display = "block";
+						document.getElementById("header-content").style.opacity = 1;
+						document.getElementById("nav").style.opacity = 1;
+						document.getElementById("main").style.opacity = 1;
+			
+						// Enable scrolling after content loads
+						document.body.style.overflow = "auto";
+					}, 3000); // Delay to match the logo's fade-out animation duration
+				});
+			</script>
+
+			<!-- <script>
+				document.addEventListener("DOMContentLoaded", function() {
 					setTimeout(function() {
 						var logoContainer = document.getElementById("logo-container");
 						logoContainer.remove(); // Remove logo container after fade-out completes
 					}, 3000); // 1s fade-in + 2s visible + 1s fade-out
 				});
-			</script>
+			</script> -->
 	</body>
 </html>
 
