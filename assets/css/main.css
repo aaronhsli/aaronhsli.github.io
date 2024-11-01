@@ -3327,7 +3327,7 @@ input, select, textarea {
 	
 	#nav.visible ul li a {
 		color: white; /* White color for nav links */
-		font-size: 0.85rem; /* Smaller font size */
+		font-size: 1rem; /* Smaller font size */
 		text-decoration: none; /* Removes underline from links */
 		padding: 0; /* No padding to remove button appearance */
 		transition: color 0.2s ease; /* Smooth transition for color change */
