@@ -63,23 +63,6 @@ footer, header, hgroup, menu, section {
 #logo-container {
     animation: fadeInOut 3s forwards; 
 }
-/*
-#header-content, #main {
-    opacity: 0;
-    transition: opacity 1s ease;
-} */
-
-
-/* #logo-container {
-    opacity: 0;
-    animation: fadeIn 1s forwards, fadeOut 1s forwards 2s;
-}
-
-#header-content {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 3s; 
-} */
 
 body {
 	line-height: 1;
@@ -3258,108 +3241,93 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-/* Nav */
-
 	#nav {
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: 0; /* Aligns the nav bar from the left */
 		width: 100%;
 		background: transparent; /* Initial transparent background */
-		color: #636363;
+		color: white;
 		z-index: 1000;
-		display: flex;
-		justify-content: flex-end;
-		padding: 1rem 0;
-		transition: background-color 0.3s ease; /* Smooth transition for background color */
-		opacity: 0; /* Initially hidden until the loading completes */
-		text-decoration: none;
-		list-style: none;
+		display: none; /* Use flexbox for layout */
+		justify-content: space-between; /* Space between icons and main-nav */
+		padding: 1rem 20px; /* Increased horizontal padding to 20px */
+		transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for background color and opacity */
+		opacity: 0; /* Initially hidden */
+		visibility: hidden; /* Ensure the nav is hidden */
 	}
-
-/* Make background visible after loading */
+	
+	/* Make background visible after loading */
 	#nav.visible {
+		opacity: 1; /* Make the nav fully visible */
+		visibility: visible; /* Make the nav visible */
 		background-image: linear-gradient(rgba(10, 22, 45, 1), rgba(10, 22, 45, 1)), url("images/overlay.png");
 		background-blend-mode: overlay;
-		opacity: 1;
-		font-family: 'Source Code Pro', monospace; /* Added font family */
-		padding-right: 20px; /* Adds padding to the right */
-		text-decoration: none;
-		list-style: none;
-		}
-
-	#nav.visible ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: flex;
-		justify-content: flex-end; /* Aligns items to the right */
-		gap: 20px; /* Space between items */
-		text-decoration: none;
 	}
-
-	#nav.visible ul li {
-		margin: 0; /* No margin between items */
-		text-decoration: none;
-		list-style: none;
-	}
-
-	#nav.visible ul li a:hover {
-		opacity: 0.8; /* Slight hover effect */
-		text-decoration: none;
-		list-style: none;
-	}
-
-	/* Regular link styling */
-	#nav ul {
-		margin: 0;
-		padding: 0;
+	
+	/* Additional styles */
+	#nav .icons {
+		display: flex; /* Display icons in a row */
 		list-style: none; /* Removes bullet points */
-		display: flex;
-		text-decoration: none;
+		margin: 0; /* Removes default margin */
+		padding: 0; /* Removes default padding */
+		justify-content: flex-start; /* Align icons to the left */
 	}
 	
-	#nav ul li {
-		margin: 0; /* No margin for consistent spacing */
-		text-decoration: none;
-		list-style: none;
+	#nav .main-nav {
+		margin: 0;
+		padding: 0; /* You can adjust this padding if needed */
+		list-style: none; /* Removes bullet points */
+		display: flex; /* Ensures links are displayed in a row */
+		justify-content: flex-end; /* Right-aligns the main navigation items */
 	}
 	
-	#nav.visible ul li a {
-		color: white; /* White color for nav links */
-		font-size: 1rem; /* Smaller font size */
-		text-decoration: none; /* Removes underline from links */
-		padding: 0; /* No padding to remove button appearance */
-		transition: color 0.2s ease; /* Smooth transition for color change */
-		list-style: none;
+	#nav .main-nav li {
+		margin: 0 1rem; /* Space between nav items */
 	}
-
-	#nav a {
-		color: #000; /* Default link color */
-		text-decoration: none;
-		font-weight: bold;
-		transition: color 0.2s ease; /* Smooth transition for color change */
-		list-style: none;
+	
+	#nav .main-nav li a {
+		font-size: 0.9rem; /* Adjust the font size as needed */
+		padding: 0 10px; /* Add horizontal padding */
 	}
-
-	#nav a:hover {
-		color: #ffffff; /* Change to white on hover */
+	
+	#nav .icons {
+		display: flex; /* Display icons in a row */
+		list-style: none; /* Removes bullet points */
+		margin: 0; /* Removes default margin */
+		padding: 0; /* Removes default padding */
 	}
-
+	
+	#nav .icons li {
+		margin-left: 0.5rem; /* Space between icons */
+	}
+	
+	#nav .icons li a {
+		color: white; /* Color for icons */
+		font-size: 1rem; /* Adjust icon font size as needed */
+		text-decoration: none; /* No underline on links */
+		padding: 0; /* No padding */
+		display: flex; /* Flexbox for centering */
+		align-items: center; /* Center icon vertically */
+	}
+	
+	/* Adjust hover color if needed */
+	#nav .icons li a:hover {
+		color: white; /* Change hover color to red */
+	}
+	
 	/* Active link styling */
 	#nav a.active {
 		color: #fff; /* White text for active link */
-		text-decoration: none;
-		list-style: none;
 	}
-
+	
 	/* Responsive adjustments for mobile screens */
 	@media screen and (max-width: 736px) {
 		#nav {
 			display: none; /* Hide on smaller screens; consider adding a mobile nav */
 		}
 	}
-
+		
 /* Main */
 
 	#main {

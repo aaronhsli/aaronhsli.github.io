@@ -30,15 +30,18 @@
         </header>
 
         <!-- Navigation -->
-
-		<nav id="nav">
-			<ul>
-				<li><a href="#about">About</a></li> <!--&nbsp; -->
-				<li><a href="#work"> Projects</a></li>
+		<nav id="nav" class="visible">
+			<ul class="icons">
+				<li><a href="mailto:li.aaron.hs@gmail.com" class="icon solid fa-envelope alt" target="_blank" rel="noopener noreferrer"><span class="label">Mail</span></a></li>
+				<li><a href="https://www.linkedin.com/in/aaronhsli/" class="icon brands fa-linkedin alt" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/aaronhsli/" class="icon brands fa-github alt" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+			</ul>
+			<ul class="main-nav">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
-
 
         <!-- Main -->
         <div id="main">
@@ -70,7 +73,7 @@
                 }
             </style>
 
-            <section id="work" class="main special">
+            <section id="projects" class="main special">
                 <header class="major">
                     <h2>Projects</h2>
                 </header>
@@ -137,26 +140,27 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-				document.body.style.overflow = "hidden";
+		<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			document.body.style.overflow = "hidden";
 
-				setTimeout(function() {
-					document.getElementById("logo-container").style.display = "none";
-					document.getElementById("logo-spacer").style.display = "none";
-					document.getElementById("header-content").style.display = "block";
-					
-					// Make nav visible and enable scrolling
-					document.getElementById("nav").classList.add("visible");
-					document.getElementById("header-content").style.opacity = 1;
-					document.getElementById("main").style.opacity = 1;
-					document.body.style.overflow = "auto";
-				}, 3000);
-
+			setTimeout(function() {
+				document.getElementById("logo-container").style.display = "none";
+				document.getElementById("logo-spacer").style.display = "none";
+				document.getElementById("header-content").style.display = "block";
+				
+				// Make nav visible and enable scrolling
+				document.getElementById("nav").style.display = "flex"; // Set display to flex
+				document.getElementById("nav").classList.add("visible"); // Add the visible class
+				document.getElementById("header-content").style.opacity = 1;
+				document.getElementById("main").style.opacity = 1;
+				document.body.style.overflow = "auto";
+			}, 3000);
+	
 				const name = "Aaron Li";
 				const typingElement = document.getElementById("name-header");
 				let nameIndex = 0;
-
+	
 				function typeName() {
 					if (nameIndex < name.length) {
 						typingElement.style.borderRight = 'none';
@@ -168,11 +172,11 @@
 						typeDescription();
 					}
 				}
-
+	
 				const descriptionText = "A software and data engineer, passionate about building AI-powered safety systems.";
 				const typingEffectElement = document.getElementById("typing-effect");
 				let descIndex = 0;
-
+	
 				function typeDescription() {
 					function type() {
 						if (descIndex < descriptionText.length) {
@@ -186,10 +190,10 @@
 					}
 					type();
 				}
-
+	
 				typeName();
 			});
-        </script>
+		</script>
 
     </body>
 </html>
