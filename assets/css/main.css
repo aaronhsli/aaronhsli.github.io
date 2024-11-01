@@ -141,30 +141,16 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background-color: #080755; /* Fallback background color */
-		background-image: url("images/overlay.png"), 
-							linear-gradient(45deg, 
-							rgba(137, 193, 146, 1) 0%, 
-							rgba(32, 164, 140, 1) 5%, 
-							rgba(93, 161, 174, 1) 10%, 
-							rgba(0, 89, 121, 1) 20%, 
-							rgba(24, 39, 64, 1) 40%, 
-							rgba(7, 20, 42, 1) 100%)
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
 	}
-
-	
-
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
 
 /* Type */
 
@@ -3832,18 +3818,40 @@ input, select, textarea {
 			}
 
 		}
+		/* Add your background styling here */
+        body {
+            margin: 0; /* Remove default margin */
+            position: relative; /* Position relative for proper placement of absolute children */
+            overflow: hidden; /* Prevent scrolling bars from appearing if background is larger */
+        }
 
-		body {
-			background-color: #07142a; /* Fallback background color */
-			background-image: url("images/overlay.png"), 
+        .background {
+            position: absolute; /* Position absolutely to cover the entire body */
+            top: 0; /* Align to top */
+            left: 0; /* Align to left */
+            right: 0; /* Align to right */
+            bottom: 0; /* Align to bottom */
+            background-color: #080755; /* Fallback background color */
+            background-image: url("images/overlay.png"), 
 								linear-gradient(-45deg, 
 								rgba(137, 193, 146, 1) 0%, 
 								rgba(32, 164, 140, 1) 5%, 
 								rgba(93, 161, 174, 1) 10%, 
 								rgba(0, 89, 121, 1) 20%, 
 								rgba(24, 39, 64, 1) 40%, 
-								rgba(7, 20, 42, 1) 100%)
-		}
+								rgba(7, 20, 42, 1) 100%);
+            background-size: cover; /* Ensure the background covers the entire area */
+            filter: blur(0.01px); /* Adjust blur radius to your liking */
+            z-index: -1; /* Place it behind other content */
+        }
+
+        .content {
+            position: relative; /* Ensure content is above the background */
+            z-index: 1; /* Ensure content is above the blurred background */
+            color: white; /* Adjust text color for visibility */
+            padding: 20px; /* Add some padding for content */
+        }
+		
 		
 		/* Custom Scrollbar */
 		::-webkit-scrollbar {
