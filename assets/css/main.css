@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 
 #header {
 	text-align: center;
+	font-family: 'Source Code Pro', monospace;
 }
 
 /* Fade-in and fade-out animations */
@@ -68,12 +69,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-}
-
-/* Hide scrollbar in Firefox */
-body {
     scrollbar-width: none; /* Firefox */
     overflow-y: scroll;
+	font-family: 'Source Code Pro', monospace;
 }
 
 ol, ul {
