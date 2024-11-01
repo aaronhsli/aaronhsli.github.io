@@ -142,12 +142,18 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: #080755; /* Fallback background color */
+		background-image: url("images/overlay.png"), 
+							linear-gradient(45deg, 
+							rgba(137, 193, 146, 1) 0%, 
+							rgba(32, 164, 140, 1) 5%, 
+							rgba(93, 161, 174, 1) 10%, 
+							rgba(0, 89, 121, 1) 20%, 
+							rgba(24, 39, 64, 1) 40%, 
+							rgba(7, 20, 42, 1) 100%)
 	}
+
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -163,7 +169,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #080755;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3828,15 +3834,15 @@ input, select, textarea {
 		}
 
 		body {
-			background-color: #935d8c; /* Fallback background color */
+			background-color: #07142a; /* Fallback background color */
 			background-image: url("images/overlay.png"), 
-							  -moz-linear-gradient(-45deg, #e37682 15%, #5f4d93 85%);
-			background-image: url("images/overlay.png"), 
-							  -webkit-linear-gradient(-45deg, #e37682 15%, #5f4d93 85%);
-			background-image: url("images/overlay.png"), 
-							  -ms-linear-gradient(-45deg, #e37682 15%, #5f4d93 85%);
-			background-image: url("images/overlay.png"), 
-							  linear-gradient(-45deg, #e37682 15%, #5f4d93 85%);
+								linear-gradient(-45deg, 
+								rgba(137, 193, 146, 1) 0%, 
+								rgba(32, 164, 140, 1) 5%, 
+								rgba(93, 161, 174, 1) 10%, 
+								rgba(0, 89, 121, 1) 20%, 
+								rgba(24, 39, 64, 1) 40%, 
+								rgba(7, 20, 42, 1) 100%)
 		}
 		
 		/* Custom Scrollbar */
@@ -3846,7 +3852,7 @@ input, select, textarea {
 		
 		/* Scrollbar Track */
 		::-webkit-scrollbar-track {
-			background-color: #935d8c; /* Track color */
+			background-color: #07142a; /* Track color */
 		}
 		
 		/* Scrollbar Thumb */
@@ -3854,7 +3860,7 @@ input, select, textarea {
 			background-color: #ffffff; /* Thumb color */
 			border-radius: 10px;
 			border: 2px solid transparent; 
-			box-shadow: 0 0 0 1px #935d8c; /* Optional: border around the thumb */
+			box-shadow: 0 0 0 1px #07142a; /* Optional: border around the thumb */
 		}
 		
 		::-webkit-scrollbar-thumb:hover {
@@ -3864,7 +3870,7 @@ input, select, textarea {
 		/* For Firefox */
 		* {
 			scrollbar-width: thin; /* Makes the scrollbar thinner */
-			scrollbar-color: #ffffff #935d8c; /* Thumb color first, then track color */
+			scrollbar-color: #ffffff #07142a; /* Thumb color first, then track color */
 		}
 		
 		
