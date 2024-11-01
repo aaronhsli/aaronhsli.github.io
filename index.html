@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="/images/image1.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -20,14 +20,15 @@
         <!-- Header -->
         <header id="header" class="alt">
             <div id="logo-container">
-                <span class="logo"><img src="images/logo.png" alt="Logo" /></span>
-            </div>
+				<span class="logo"><img src="images/logo.png" alt="Logo" /></span>
+			</div>
+			<div id="logo-spacer" style="height: 2000px;"></div> <!-- Spacer div -->
             <div id="header-content" style="display: none;">
-                <h1 style="font-weight: bold;">Aaron Li</h1>
-                <p>A software and data engineer, passionate about building AI-powered safety systems.</p>
+                <h1 id="name-header" style="font-weight: bold;"></h1> <!-- Header Name -->
+                <div id="typing-effect"></div> <!-- Typing effect container -->
             </div>
         </header>
-        <!-- Header -->	
+        <!-- Header -->    
         <nav id="nav" style="display: none;">
             <ul>
                 <li><a href="#about" class="active">About</a></li>
@@ -138,19 +139,58 @@
                 document.body.style.overflow = "hidden";
 
                 setTimeout(function() {
-                    // Remove the logo container
-                    document.getElementById("logo-container").style.display = "none";
+				// Remove the logo container and spacer
+				document.getElementById("logo-container").style.display = "none";
+				document.getElementById("logo-spacer").style.display = "none"; // Hide the spacer
 
-                    // Display and fade in header content, nav, and main content
-                    document.getElementById("header-content").style.display = "block";
-                    document.getElementById("nav").style.display = "block";
-                    document.getElementById("header-content").style.opacity = 1;
-                    document.getElementById("nav").style.opacity = 1;
-                    document.getElementById("main").style.opacity = 1;
+				// Display and fade in header content, nav, and main content
+				document.getElementById("header-content").style.display = "block";
+				document.getElementById("nav").style.display = "block";
+				document.getElementById("header-content").style.opacity = 1;
+				document.getElementById("nav").style.opacity = 1;
+				document.getElementById("main").style.opacity = 1;
 
-                    // Enable scrolling after content loads
-                    document.body.style.overflow = "auto";
-                }, 3000); // Delay to match the logo's fade-out animation duration
+				// Enable scrolling after content loads
+				document.body.style.overflow = "auto";
+			}, 3000);
+
+                // Typing effect for header name
+                const name = "Aaron Li";
+                const typingElement = document.getElementById("name-header");
+                let nameIndex = 0;
+
+                function typeName() {
+                    if (nameIndex < name.length) {
+						typingEffectElement.style.borderRight = 'none';
+                        typingElement.innerHTML += name.charAt(nameIndex);
+                        nameIndex++;
+                        setTimeout(typeName, 100); 
+                    } else {
+                        typingElement.style.borderRight = 'none';
+                        typeDescription(); 
+                    }
+                }
+
+                // Typing effect for header paragraph
+                const descriptionText = "A software and data engineer, passionate about building AI-powered safety systems.";
+                const typingEffectElement = document.getElementById("typing-effect");
+                let descIndex = 0;
+
+                function typeDescription() {
+                    function type() {
+                        if (descIndex < descriptionText.length) {
+							typingEffectElement.style.borderRight = 'none';
+                            typingEffectElement.innerHTML += descriptionText.charAt(descIndex);
+                            descIndex++;
+                            setTimeout(type, 100); // Adjust speed (in milliseconds)
+                        } else {
+                            typingEffectElement.style.borderRight = 'none';
+                        }
+                    }
+                    type(); 
+                }
+
+                typeName(); 
             });
         </script>
 

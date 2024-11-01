@@ -28,6 +28,20 @@ footer, header, hgroup, menu, nav, section {
 	font-family: 'Source Code Pro', monospace;
 }
 
+#typing-effect {
+    font-family: 'Source Code Pro', monospace; /* Your chosen font */
+    font-size: 24px; /* Responsive font size based on viewport width */
+    border-right: 2px solid black; /* Cursor */
+    overflow: hidden; /* Hide overflow */
+    display: inline-block; /* Ensure proper inline-block behavior */
+    word-wrap: break-word; /* Allow words to break to the next line */
+}
+
+#name-header {
+	font-family: 'Source Code Pro', monospace; /* Your chosen font */
+	font-size: 32px; /* Responsive font size for the name */
+}
+
 /* Fade-in and fade-out animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -49,29 +63,15 @@ footer, header, hgroup, menu, nav, section {
 #logo-container {
     animation: fadeInOut 3s forwards; 
 }
-/*
-#header-content, #main {
-    opacity: 0;
-    transition: opacity 1s ease;
-} */
-
-
-/* #logo-container {
-    opacity: 0;
-    animation: fadeIn 1s forwards, fadeOut 1s forwards 2s;
-}
-
-#header-content {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 3s; 
-} */
 
 body {
 	line-height: 1;
+}
+
+/* Hide scrollbar in Firefox */
+body {
     scrollbar-width: none; /* Firefox */
     overflow-y: scroll;
-	font-family: 'Source Code Pro', monospace;
 }
 
 ol, ul {
@@ -3816,40 +3816,19 @@ input, select, textarea {
 			}
 
 		}
-		/* Add your background styling here */
-        body {
-            margin: 0; /* Remove default margin */
-            position: relative; /* Position relative for proper placement of absolute children */
-            overflow: hidden; /* Prevent scrolling bars from appearing if background is larger */
-        }
 
-        .background {
-            position: absolute; /* Position absolutely to cover the entire body */
-            top: 0; /* Align to top */
-            left: 0; /* Align to left */
-            right: 0; /* Align to right */
-            bottom: 0; /* Align to bottom */
-            background-color: #080755; /* Fallback background color */
-            background-image: url("images/overlay.png"), 
+		body {
+			background-color: #07142a; /* Fallback background color */
+			background-image: url("images/overlay.png"), 
 								linear-gradient(-45deg, 
 								rgba(137, 193, 146, 1) 0%, 
 								rgba(32, 164, 140, 1) 5%, 
 								rgba(93, 161, 174, 1) 10%, 
 								rgba(0, 89, 121, 1) 20%, 
 								rgba(24, 39, 64, 1) 40%, 
-								rgba(7, 20, 42, 1) 100%);
-            background-size: cover; /* Ensure the background covers the entire area */
-            filter: blur(0.01px); /* Adjust blur radius to your liking */
-            z-index: -1; /* Place it behind other content */
-        }
-
-        .content {
-            position: relative; /* Ensure content is above the background */
-            z-index: 1; /* Ensure content is above the blurred background */
-            color: white; /* Adjust text color for visibility */
-            padding: 20px; /* Add some padding for content */
-        }
-		
+								rgba(7, 20, 42, 1) 100%)
+			
+		}
 		
 		/* Custom Scrollbar */
 		::-webkit-scrollbar {
