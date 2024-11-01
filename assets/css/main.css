@@ -29,17 +29,17 @@ footer, header, hgroup, menu, section {
 }
 
 #typing-effect {
-    font-family: 'Source Code Pro', monospace; /* Your chosen font */
-    font-size: 24px; /* Responsive font size based on viewport width */
-    border-right: 2px solid black; /* Cursor */
-    overflow: hidden; /* Hide overflow */
-    display: inline-block; /* Ensure proper inline-block behavior */
-    word-wrap: break-word; /* Allow words to break to the next line */
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 24px; 
+    border-right: 2px solid black; 
+    overflow: hidden; 
+    display: inline-block; 
+    word-wrap: break-word; 
 }
 
 #name-header {
-	font-family: 'Source Code Pro', monospace; /* Your chosen font */
-	font-size: 32px; /* Responsive font size for the name */
+	font-family: 'Source Code Pro', monospace; 
+	font-size: 32px; 
 }
 
 /* Fade-in and fade-out animations */
@@ -3244,87 +3244,82 @@ input, select, textarea {
 	#nav {
 		position: fixed;
 		top: 0;
-		left: 0; /* Aligns the nav bar from the left */
+		left: 0; 
 		width: 100%;
-		background: transparent; /* Initial transparent background */
+		background: transparent; 
 		color: white;
 		z-index: 1000;
-		display: none; /* Use flexbox for layout */
-		justify-content: space-between; /* Space between icons and main-nav */
-		padding: 1rem 20px; /* Increased horizontal padding to 20px */
-		transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for background color and opacity */
-		opacity: 0; /* Initially hidden */
-		visibility: hidden; /* Ensure the nav is hidden */
+		display: none; 
+		justify-content: space-between; 
+		padding: 1rem 20px; 
+		transition: background-color 0.3s ease, opacity 0.3s ease; 
+		opacity: 0;
+		visibility: hidden;
 	}
 	
-	/* Make background visible after loading */
 	#nav.visible {
-		opacity: 1; /* Make the nav fully visible */
-		visibility: visible; /* Make the nav visible */
+		opacity: 1; 
+		visibility: visible; 
 		background-image: linear-gradient(rgba(10, 22, 45, 1), rgba(10, 22, 45, 1)), url("images/overlay.png");
 		background-blend-mode: overlay;
 	}
 	
-	/* Additional styles */
 	#nav .icons {
-		display: flex; /* Display icons in a row */
-		list-style: none; /* Removes bullet points */
-		margin: 0; /* Removes default margin */
-		padding: 0; /* Removes default padding */
-		justify-content: flex-start; /* Align icons to the left */
+		display: flex; 
+		list-style: none; 
+		margin: 0; 
+		padding: 0; 
+		justify-content: flex-start; 
 	}
 	
 	#nav .main-nav {
 		margin: 0;
-		padding: 0; /* You can adjust this padding if needed */
-		list-style: none; /* Removes bullet points */
-		display: flex; /* Ensures links are displayed in a row */
-		justify-content: flex-end; /* Right-aligns the main navigation items */
+		padding: 0; 
+		list-style: none; 
+		display: flex; 
+		justify-content: flex-end; 
 	}
 	
 	#nav .main-nav li {
-		margin: 0 1rem; /* Space between nav items */
+		margin: 0 1rem; 
 	}
 	
 	#nav .main-nav li a {
-		font-size: 0.9rem; /* Adjust the font size as needed */
-		padding: 0 10px; /* Add horizontal padding */
+		font-size: 0.9rem; 
+		padding: 0 10px; 
 	}
 	
 	#nav .icons {
-		display: flex; /* Display icons in a row */
-		list-style: none; /* Removes bullet points */
-		margin: 0; /* Removes default margin */
-		padding: 0; /* Removes default padding */
+		display: flex; 
+		list-style: none; 
+		margin: 0; 
+		padding: 0; 
 	}
 	
 	#nav .icons li {
-		margin-left: 0.5rem; /* Space between icons */
+		margin-left: 0.5rem; 
 	}
 	
 	#nav .icons li a {
-		color: white; /* Color for icons */
-		font-size: 1rem; /* Adjust icon font size as needed */
-		text-decoration: none; /* No underline on links */
-		padding: 0; /* No padding */
-		display: flex; /* Flexbox for centering */
-		align-items: center; /* Center icon vertically */
+		color: white; 
+		font-size: 1rem;
+		text-decoration: none; 
+		padding: 0; 
+		display: flex; 
+		align-items: center; 
 	}
 	
-	/* Adjust hover color if needed */
 	#nav .icons li a:hover {
-		color: white; /* Change hover color to red */
+		color: white; 
 	}
 	
-	/* Active link styling */
 	#nav a.active {
-		color: #fff; /* White text for active link */
+		color: white; 
 	}
 	
-	/* Responsive adjustments for mobile screens */
 	@media screen and (max-width: 736px) {
 		#nav {
-			display: none; /* Hide on smaller screens; consider adding a mobile nav */
+			display: none; 
 		}
 	}
 		
@@ -3792,34 +3787,31 @@ input, select, textarea {
 								rgba(24, 39, 64, 1) 30%, 
 								rgba(7, 20, 42, 1) 40%, 
 								rgba(7, 20, 42, 1) 100%)
-			
 		} 
-		/* Custom Scrollbar */
+
 		::-webkit-scrollbar {
 			width: 8px; 
 		}
 		
-		/* Scrollbar Track */
 		::-webkit-scrollbar-track {
-			background-color: #07142a; /* Track color */
+			background-color: #07142a; 
 		}
 		
-		/* Scrollbar Thumb */
+		
 		::-webkit-scrollbar-thumb {
-			background-color: #ffffff; /* Thumb color */
+			background-color: #ffffff; 
 			border-radius: 10px;
 			border: 2px solid transparent; 
-			box-shadow: 0 0 0 1px #07142a; /* Optional: border around the thumb */
+			box-shadow: 0 0 0 1px #07142a; 
 		}
 		
 		::-webkit-scrollbar-thumb:hover {
-			background-color: #e0e0e0; /* Thumb color on hover */
+			background-color: #e0e0e0;
 		}
 		
-		/* For Firefox */
 		* {
-			scrollbar-width: thin; /* Makes the scrollbar thinner */
-			scrollbar-color: #ffffff #07142a; /* Thumb color first, then track color */
+			scrollbar-width: thin; 
+			scrollbar-color: #ffffff #07142a; 
 		}
 		
 		
