@@ -37,22 +37,21 @@ footer, header, hgroup, menu, section {
 }
 
 #name-header {
-	font-family: 'Source Code Pro', monospace; 
-	font-size: 128px;     margin: 0; /* Removes default margin */
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 8vw !important;
+    margin: 0; /* Removes default margin */
     padding-top: 0em; /* Adds space above the name */
-	margin: 0; /* Removes default margin */
-
 }
 
 #typing-effect {
     font-family: 'Source Code Pro', monospace; 
-    font-size: 64px; 
+    font-size: 4vw !important;
     border-right: 2px solid black; 
     overflow: hidden; 
     display: inline-block; 
     word-wrap: break-word; 
-	margin: 0; /* Removes default margin */
-    padding-bottom: 5.5em; /* Adds space below the description */
+    margin: 0; /* Removes default margin */
+    padding-bottom: 2em; /* Adds space below the description 5.5 */
 }
 
 /* Fade-in and fade-out animations */
