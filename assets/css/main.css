@@ -63,23 +63,35 @@ footer, header, hgroup, menu, section {
 .project-content h3 {
     margin: 0;                  /* Remove default margin */
     padding-bottom: 0.5em;      /* Add space below h3 */
-	text-align: center;
+    text-align: center;         /* Center align h3 */
 }
 
 .project-content p {
     margin: 0;                  /* Remove default margin */
     padding-top: 0.5em; 
-	text-align: left;        /* Add space above p */
+    text-align: left;           /* Add space above p */
 }
 
-/* Additional styles to ensure no underline and base color */
+/* Styles specific to the <a> inside <h3> */
+.project-content h3 a {
+    border-bottom: 1px solid #fff; /* Add a bottom border to the link in h3 */
+    padding-bottom: 1px;           /* Space between text and border */
+    text-decoration: none;          /* Remove underline from the link */
+    color: #fff;                   /* Default text color */
+    transition: color 0.3s ease;   /* Smooth color transition */
+}
+
+/* Hover effect specifically for <a> inside <h3> */
+.project-content h3 a:hover {
+    color: #ccc;                   /* Change text color on hover */
+    border-color: #ccc;            /* Change border color on hover */
+}
+
+/* Styles for other <a> tags in project-content */
 .project-content a {
-    text-decoration: none !important;
-    color: inherit;
-}
-
-.project-content a:link {
-	border-bottom: none;
+    border-bottom: none;           /* No bottom border for other <a> tags */
+    text-decoration: none;          /* Remove underline from other links */
+    color: inherit;                /* Inherit color from parent */
 }
 
 #certs .content {
@@ -3309,6 +3321,9 @@ input, select, textarea {
 		display: flex; 
 	}
 	
+
+	
+
 	#nav.visible {
 		opacity: 1; 
 		visibility: visible; 
@@ -3330,6 +3345,18 @@ input, select, textarea {
 		list-style: none; 
 		display: flex; 
 		justify-content: flex-end; 
+	}
+
+	#nav .main-nav a {
+		border-bottom: 1px solid #fff; /* Bottom border for links */
+		color: #fff; /* Default text color */
+		text-decoration: none; /* Remove underline */
+		transition: color 0.3s ease; /* Smooth color transition */
+	}
+	
+	#nav .main-nav a:hover {
+		color: #ccc; /* Change text color on hover */
+		border-color: #ccc; /* Optional: Change border color on hover */
 	}
 	
 	#nav .main-nav li {
@@ -3873,10 +3900,6 @@ input, select, textarea {
 		}
 		
 		footer .icons a:hover {
-			color: #ccc; /* Optional: Change color on hover for better visibility */
-		}
-
-		.project-content a:hover {
 			color: #ccc; /* Optional: Change color on hover for better visibility */
 		}
 		
