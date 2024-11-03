@@ -47,13 +47,29 @@ footer, header, hgroup, menu, section {
     font-family: 'Source Code Pro', monospace; 
     font-size: 4vw !important;
     border-right: 2px solid black; 
-    overflow: hidden; 
+    /* overflow: hidden;  */
     display: inline-block; 
     word-wrap: break-word; 
     margin: 0; /* Removes default margin */
     padding-bottom: 3em; /* Adds space below the description 5.5 */
 }
 
+.project-content {
+    display: flex;               /* Enable flexbox */
+    flex-direction: column;      /* Stack children vertically */
+    height: 100%;                /* Make it full height of the parent */
+}
+
+.project-content h3 {
+    margin: 0;                  /* Remove default margin */
+    padding-bottom: 0.5em;      /* Add space below h3 */
+}
+
+.project-content p {
+    margin: 0;                  /* Remove default margin */
+    padding-top: 0.5em; 
+	text-align: left;        /* Add space above p */
+}
 /* Fade-in and fade-out animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -2703,6 +2719,9 @@ input, select, textarea {
 					margin-right: auto;
 				}
 
+		header.major h3 {
+			text-align: center;
+		}	
 		header.major p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
@@ -3262,12 +3281,13 @@ input, select, textarea {
 		background: transparent; 
 		color: white;
 		z-index: 1000;
-		display: none; 
+		/* display: none;  */
 		justify-content: space-between; 
 		padding: 1rem 20px; 
 		transition: background-color 0.3s ease, opacity 0.3s ease; 
 		opacity: 0;
-		visibility: hidden;
+		/* visibility: hidden; */
+		display: flex; 
 	}
 	
 	#nav.visible {
@@ -3837,15 +3857,5 @@ input, select, textarea {
 			color: #ccc; /* Optional: Change color on hover for better visibility */
 		}
 
-		.project-section .features li {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			height: 100%;
-		}
-
-		.project-section .features li .button {
-			margin-top: auto;
-		}
 		
 
