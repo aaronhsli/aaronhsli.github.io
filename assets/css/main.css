@@ -63,6 +63,7 @@ footer, header, hgroup, menu, section {
 .project-content h3 {
     margin: 0;                  /* Remove default margin */
     padding-bottom: 0.5em;      /* Add space below h3 */
+	text-align: center;
 }
 
 .project-content p {
@@ -70,6 +71,22 @@ footer, header, hgroup, menu, section {
     padding-top: 0.5em; 
 	text-align: left;        /* Add space above p */
 }
+
+/* Additional styles to ensure no underline and base color */
+.project-content a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.project-content a:link {
+	border-bottom: none;
+}
+
+#certs .content {
+    text-align: left;       /* Aligns text to the left */
+    padding-left: 1em;      /* Adds a bit of padding to the left */
+}
+
 /* Fade-in and fade-out animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -228,6 +245,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+			text-decoration: none;
 		}
 
 	strong, b {
@@ -369,6 +387,7 @@ input, select, textarea {
 
 	a:hover {
 		color: #ffffff;
+		text-decoration: none;
 	}
 
 	strong, b {
@@ -2317,13 +2336,13 @@ input, select, textarea {
 	}
 
 	.icon.major {
-		border: solid 1px;
+		/* border: solid 1px; */
 		display: inline-block;
 		border-radius: 100%;
 		padding: 0.65em;
 		margin: 0 0 2em 0;
 		cursor: default;
-		color: white !important; /* Ensure color is white */
+		color: white !important;
 	}
 
 	.icon.major:before {
@@ -2333,16 +2352,16 @@ input, select, textarea {
 		height: 2.25em;
 		line-height: 2.2em;
 		border-radius: 100%;
-		border: solid 1px;
+		/* border: solid 1px; */
 		text-align: center;
-		color: white !important; /* Ensure color is white */
+		color: white !important;
 	}
 
 	.icon.alt {
 		display: inline-block;
 		border: solid 1px;
 		border-radius: 100%;
-		color: #ffffff !important; /* Force icon color to white */
+		color: #ffffff !important; 
 	}
 
 	.icon.alt:before {
@@ -3857,5 +3876,16 @@ input, select, textarea {
 			color: #ccc; /* Optional: Change color on hover for better visibility */
 		}
 
+		.project-content a:hover {
+			color: #ccc; /* Optional: Change color on hover for better visibility */
+		}
 		
+		/* a:link {
+			text-decoration: none;
+			outline: none;
+			border-bottom: none;
+		} */
+
+
+				
 
