@@ -83,8 +83,8 @@ footer, header, hgroup, menu, section {
 
 /* Hover effect specifically for <a> inside <h3> */
 .project-content h3 a:hover {
-    color: #ccc;                   /* Change text color on hover */
-    border-color: #ccc;            /* Change border color on hover */
+    color: #bbb !important;                   /* Change text color on hover */
+    border-color: #bbb;            /* Change border color on hover */
 }
 
 /* Styles for other <a> tags in project-content */
@@ -3355,8 +3355,8 @@ input, select, textarea {
 	}
 	
 	#nav .main-nav a:hover {
-		color: #ccc; /* Change text color on hover */
-		border-color: #ccc; /* Optional: Change border color on hover */
+		color: #bbb; /* Change text color on hover */
+		border-color: #bbb; /* Optional: Change border color on hover */
 	}
 	
 	#nav .main-nav li {
@@ -3900,7 +3900,7 @@ input, select, textarea {
 		}
 		
 		footer .icons a:hover {
-			color: #ccc; /* Optional: Change color on hover for better visibility */
+			color: #bbb; /* Optional: Change color on hover for better visibility */
 		}
 		
 		/* a:link {
