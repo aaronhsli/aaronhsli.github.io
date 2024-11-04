@@ -99,6 +99,16 @@ footer, header, hgroup, menu, section {
     padding-left: 1em;      /* Adds a bit of padding to the left */
 }
 
+#certs .content a {
+	border-bottom: none;
+} 
+
+#certs .content a:hover {
+	color: #bbb !important;                   /* Change text color on hover */
+    border-color: #bbb;            /* Change border color on hover */
+} 
+
+
 /* Fade-in and fade-out animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -3903,11 +3913,30 @@ input, select, textarea {
 			color: #bbb; /* Optional: Change color on hover for better visibility */
 		}
 		
-		/* a:link {
+		#header {
+			width: 100%;            /* Make header full-width */
+			text-align: center;     /* Center-aligns the h1 and p content */
+		}
+		
+		.back-arrow {
+			display: inline-block;  /* Keeps the arrow on its own line */
+			font-size: 24px;        /* Adjust arrow size */
 			text-decoration: none;
-			outline: none;
+			color: #fff;
+			padding-right: 845px;     /* Add space between arrow and the edge */
+			margin-bottom: 0px;    /* Space between arrow and header content */
+			text-align: left;       /* Aligns the arrow to the left side */
+			transition: color 0.3s ease;
 			border-bottom: none;
-		} */
+		}
+		
+		.back-arrow:hover {
+			color: #ccc; /* Change color on hover */
+		}
+		
+		#header h1, #header p {
+			text-align: center; /* Center-aligns header content below the arrow */
+		}
 
 
 				
