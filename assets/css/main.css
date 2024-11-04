@@ -3322,17 +3322,12 @@ input, select, textarea {
 		background: transparent; 
 		color: white;
 		z-index: 1000;
-		/* display: none;  */
 		justify-content: space-between; 
 		padding: 1rem 20px; 
 		transition: background-color 0.3s ease, opacity 0.3s ease; 
 		opacity: 0;
-		/* visibility: hidden; */
 		display: flex; 
 	}
-	
-
-	
 
 	#nav.visible {
 		opacity: 1; 
@@ -3358,10 +3353,14 @@ input, select, textarea {
 	}
 
 	#nav .main-nav a {
-		border-bottom: 1px solid #fff; /* Bottom border for links */
-		color: #fff; /* Default text color */
-		text-decoration: none; /* Remove underline */
+		border-bottom: none; /* Bottom border for links */
+		color: #fff;                /* Default text color */
+		text-decoration: none;       /* Remove underline */
 		transition: color 0.3s ease; /* Smooth color transition */
+		padding:0;
+		margin:0;
+		line-height: normal;
+		box-sizing: border-box; 
 	}
 	
 	#nav .main-nav a:hover {
