@@ -58,7 +58,7 @@ ul.features {
     display: flex;
     flex-wrap: wrap;  /* Allow wrapping if necessary */
     justify-content: center;  /* Center items horizontally */
-    padding: 0;
+    padding: 0 2em 0 0;
     margin: 0;
     list-style-type: none;
 }
@@ -130,16 +130,16 @@ ul.features li {
     margin: 0 auto;
 }
 
-#certs .cert-list {
+#main .cert-list {
     text-align: left;       /* Aligns text to the left */
     padding-left: 1em;      /* Adds a bit of padding to the left */
 }
 
-#certs .cert-list a {
+#main .cert-list a {
 	border-bottom: none;
 } 
 
-#certs .cert-list a:hover {
+#main .cert-list a:hover {
 	color: #bbb !important;                   /* Change text color on hover */
     border-color: #bbb;            /* Change border color on hover */
 } 
@@ -3403,7 +3403,7 @@ input, select, textarea {
 	}
 	
 	#nav .main-nav li a {
-		font-size: 0.9rem; 
+		font-size: 1.2rem; 
 		padding: 0 10px; 
 	}
 	
