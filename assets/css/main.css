@@ -77,6 +77,11 @@ ul.features li {
     align-self: center;  /* Center the icon horizontally within its container */
 }
 
+.project-content .icon.major{
+    font-size: 3rem;  /* Adjust the icon size */
+    margin-bottom: 1rem;  /* Add space between icon and text */
+    align-self: center;  /* Center the icon horizontally within its container */
+}
 
 .project-content {
     display: flex;               /* Enable flexbox */
@@ -116,6 +121,13 @@ ul.features li {
     border-bottom: none;           /* No bottom border for other <a> tags */
     text-decoration: none;          /* Remove underline from other links */
     color: inherit;                /* Inherit color from parent */
+	text-align: none;
+}
+
+.project-content a span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #certs .content {
@@ -2381,10 +2393,10 @@ input, select, textarea {
 
 	.icon.major {
 		/* border: solid 1px; */
-		display: inline-block;
+		/* display: inline-block; */
 		border-radius: 100%;
 		padding: 0em;
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
 		cursor: default;
 		color: white !important;
 	}
@@ -3967,7 +3979,3 @@ input, select, textarea {
 		#header h1, #header p {
 			text-align: center; /* Center-aligns header content below the arrow */
 		}
-
-
-				
-
