@@ -130,16 +130,16 @@ ul.features li {
     margin: 0 auto;
 }
 
-#certs .content {
+#certs .cert-list {
     text-align: left;       /* Aligns text to the left */
     padding-left: 1em;      /* Adds a bit of padding to the left */
 }
 
-#certs .content a {
+#certs .cert-list a {
 	border-bottom: none;
 } 
 
-#certs .content a:hover {
+#certs .cert-list a:hover {
 	color: #bbb !important;                   /* Change text color on hover */
     border-color: #bbb;            /* Change border color on hover */
 } 
@@ -2770,10 +2770,6 @@ input, select, textarea {
 
 	section.special, article.special {
 		text-align: center;
-	}
-
-	header.major {
-		margin-bottom: 3em;
 	}
 
 		header.major h2 {
