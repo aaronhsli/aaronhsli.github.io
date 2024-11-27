@@ -24,33 +24,62 @@
 
 						<!-- Content -->
 							<section id="Problem" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+								<span class="image main"><img src="images/bg.png" alt="" /></span>
 								<h2>Problem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<p>In urban environments, personal safety is a major concern for residents, especially during commutes or when visiting unfamiliar areas. Despite the availability of safety statistics and real-time alerts, there is a lack of accessible tools that enable individuals to make informed decisions about their routes or locations based on safety. Current solutions often fail to integrate live data, predictive analytics, and user-specific preferences, leaving users without actionable insights to mitigate risks effectively.</p>
 							</section>
 							<section id="Approach" class="main">
 								<h2>Approach</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<p>The development of safeTO follows a phased methodology to ensure a robust and insightful platform: </p>
+								<ol>
+									<li><b>Data Extraction</b></li>
+									<p>Data is collected from the Toronto Police and the Toronto Open Data Portal, focusing on critical statistics for neighborhoods across the city. This phase emphasizes sourcing accurate, up-to-date information essential for meaningful analysis.  </p>
+									<li><b>Data Transformation</b></li>
+									<p>Extracted data is cleaned, structured, and prepared for analysis using Python's pandas library. This involves normalizing formats, handling missing values, and creating datasets that are both readable and suited for generating insights. </p>
+									<li><b>Data Loading and Analysis</b></li>	
+									<p>The transformed data is loaded into dataframes to facilitate in-depth analysis. Techniques such as feature engineering, heat maps, and correlation analysis are employed to uncover patterns and relationships. These steps highlight key factors influencing neighborhood safety. </p>
+									<li><b>Predictive Modeling and Insights</b></li>	
+									<p>This phase focuses on applying predictive models to identify trends or determine why some areas are safer than others. These insights can inform users about factors impacting safety and provide recommendations for risk mitigation.</p>
+								</ol>
 							</section>
 							<section id="Solution" class="main">
-								<h2>Solution</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<h2>Challenges and Lessons Learned</h2>
+								<ol>
+									<li><b>Data Cleaning</b></li>
+									<p>Ensuring data consistency and accuracy proved challenging due to missing entries, inconsistent formats, and irrelevant information. Developing an efficient cleaning pipeline was essential to maintain the integrity of the analysis.</p>
+									<li><b>Finding Appropriate Data</b></li>
+									<p>Identifying relevant, high-quality datasets was another hurdle. Not all data sources contained the level of detail or reliability required for meaningful insights, making it crucial to vet and curate information carefully.</p>
+									<li><b>Selecting the Correct Storage Medium and Database</b></li>
+									<p>Determining the optimal storage solution for the project's data needs was a key learning experience. Balancing accessibility, performance, and scalability led to valuable insights on database design and management for data-intensive applications.</p>
+								</ol>
 							</section>
 							<section id="Next Steps" class="main">
-								<h2>Next Steps</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<h2>Outcomes and Next Steps</h2>
+									<p>Still in progress!</p>
+									<!-- <h3><b>Outcomes</b></h3>
+									<ol>
+										<li><b>Data-Driven Insights</b></li>
+										<p>Developed a structured dataset from multiple sources (Toronto Police and Open Data Portal), enabling neighborhood-level safety analysis. Identified key factors and correlations influencing neighborhood safety using feature engineering, heat maps, and other techniques.</p>
+										<li><b>Framework for Predictive Modeling</b></li>
+										<p>Built the foundation for predictive analytics to identify trends and forecast safety conditions in Toronto neighborhoods.</p>
+										<li><b>Improved Data Management Skills</b></li>
+										<p>Successfully implemented data pipelines and explored solutions for data storage, improving the overall system's scalability and efficiency.</p>
+										<li><b>Foundation for User-Centric Applications</b></li>
+										<p>Established groundwork for future tools, such as interactive safety maps and real-time notifications, to make insights actionable for users.</p>
+									</ol>
+									<h3><b>Next Steps</b></h3>
+									<ol>
+										<li><b>Implement Predictive Modeling</b></li>
+										<p>Use machine learning models to predict safety scores or risk zones based on historical data and real-time trends. Explore why certain areas are safer by incorporating socioeconomic, demographic, and environmental factors into the models.</p>
+										<li><b>User Interface Development</b></li>
+										<p>Design and build an intuitive user interface (web or mobile app) to allow users to interact with safety insights. Include real-time alerts and route suggestions for safer travel.</p>
+										<li><b>Partnerships and Data Integration</b></li>
+										<p>Collaborate with local authorities, neighborhood associations, and public safety organizations to access more granular and timely data. Integrate community-sourced data (e.g., reports from citizens) to improve accuracy and responsiveness.</p>
+										<li><b>Pilot Testing and Feedback Collection</b></li>
+										<p>Launch a pilot version of safeTO in selected neighborhoods for real-world testing. Gather feedback from users and stakeholders to refine the features and improve accuracy.</p>
+										<li><b>Scalability and Expansion</b></li>
+										<p>Plan for scaling the platform to cover more cities or integrate with larger safety initiatives. Optimize the backend for increased data volume and computational demands.</p>
+									</ol> -->
 							</section>
 					</div>
 
