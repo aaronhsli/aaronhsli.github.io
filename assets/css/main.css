@@ -3824,8 +3824,8 @@ input, select, textarea {
 		}
 		
 		.footer-content {
-			max-width: 600px;
-			width: 100%;
+			max-width: 1000px;
+			width: 50%;
 		}
 
 		@media screen and (max-width: 1280px) {
