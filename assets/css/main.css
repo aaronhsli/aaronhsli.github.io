@@ -3973,3 +3973,11 @@ input, select, textarea {
 		#header h1, #header p {
 			text-align: center; /* Center-aligns header content below the arrow */
 		}
+
+		#Summary ul {
+			margin: 0 0 10px 0; /* No margin at the top; adds a 10px margin below the list */
+		  }
+		  
+		  #Summary ul li {
+			margin-bottom: 5px; /* Small margin between list items */
+		  }
