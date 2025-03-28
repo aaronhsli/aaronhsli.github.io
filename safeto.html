@@ -23,65 +23,64 @@
 					<div id="main">
 
 						<!-- Content -->
-							<section id="Problem" class="main">
-								<span class="image main"><img src="images/bg.png" alt="" /></span>
-								<h2>Problem</h2>
-								<p>In urban environments, personal safety is a major concern for residents, especially during commutes or when visiting unfamiliar areas. Despite the availability of safety statistics and real-time alerts, there is a lack of accessible tools that enable individuals to make informed decisions about their routes or locations based on safety. Current solutions often fail to integrate live data, predictive analytics, and user-specific preferences, leaving users without actionable insights to mitigate risks effectively.</p>
-							</section>
-							<section id="Approach" class="main">
-								<h2>Approach</h2>
-								<p>The development of safeTO follows a phased methodology to ensure a robust and insightful platform: </p>
+						<section id="Problem" class="main">
+							<span class="image main"><img src="images/bg.png" alt="" /></span>
+							<h2>Problem</h2>
+							<p>Living in a city can be overwhelming when it comes to personal safety. We've all been there - that moment of uncertainty when walking home late or exploring a new neighborhood. I realized that despite having access to safety statistics and alerts, there's a massive gap in how we actually use this information. Most safety tools feel disconnected and impersonal. They throw numbers at you but don't help you make real, actionable decisions about your routes or surroundings. I wanted to change that.</p>
+						</section>
+						<section id="Approach" class="main">
+							<h2>Approach</h2>
+							<p>safeTO was born from a simple mission: transform complex safety data into something truly useful. Here's how I'm making it happen:</p>
+							<ol>
+								<li><b>Data Extraction</b></li>
+								<p>I'm diving deep into Toronto's data ecosystem, pulling critical safety information from the Toronto Police and the Toronto Open Data Portal. This isn't just about collecting numbers - it's about finding the stories hidden in the data.</p>
+								<li><b>Data Transformation</b></li>
+								<p>Using Python's pandas library, I'm turning raw data into a meaningful narrative. Think of it like translating a foreign language - cleaning up messy formats, filling in gaps, and creating a dataset that actually makes sense.</p>
+								<li><b>Data Loading and Analysis</b></li>	
+								<p>Now comes the detective work. I'm using techniques like feature engineering and heat maps to uncover the hidden patterns of urban safety. What makes a neighborhood feel secure? What are the invisible threads connecting different safety indicators?</p>
+								<li><b>Predictive Modeling and Insights</b></li>	
+								<p>The ultimate goal: create a tool that doesn't just show you where danger might be, but helps you understand why. By applying predictive models, we can start to decode the complex factors that contribute to neighborhood safety.</p>
+							</ol>
+						</section>
+						<section id="Solution" class="main">
+							<h2>Challenges and Lessons Learned</h2>
+							<ol>
+								<li><b>Data Cleaning</b></li>
+								<p>Data is messy - and I mean really messy. Inconsistent formats, missing information, random noise. Creating a cleaning pipeline felt like being a digital janitor, but it was crucial to ensure our insights are actually meaningful.</p>
+								<li><b>Finding Appropriate Data</b></li>
+								<p>Not all data is created equal. I quickly learned that finding truly high-quality, reliable datasets is more art than science. It's like panning for gold - you have to sift through a lot of dirt to find those precious insights.</p>
+								<li><b>Selecting the Right Database</b></li>
+								<p>Choosing a database was like solving a complex puzzle. How do you balance performance, accessibility, and the ability to scale? Each decision became a learning opportunity about building robust data systems.</p>
+							</ol>
+						</section>
+						<section id="Next Steps" class="main">
+							<h2>Outcomes and Next Steps</h2>
+								<h3><b>Outcomes</b></h3>
 								<ol>
-									<li><b>Data Extraction</b></li>
-									<p>Data is collected from the Toronto Police and the Toronto Open Data Portal, focusing on critical statistics for neighborhoods across the city. This phase emphasizes sourcing accurate, up-to-date information essential for meaningful analysis.  </p>
-									<li><b>Data Transformation</b></li>
-									<p>Extracted data is cleaned, structured, and prepared for analysis using Python's pandas library. This involves normalizing formats, handling missing values, and creating datasets that are both readable and suited for generating insights. </p>
-									<li><b>Data Loading and Analysis</b></li>	
-									<p>The transformed data is loaded into dataframes to facilitate in-depth analysis. Techniques such as feature engineering, heat maps, and correlation analysis are employed to uncover patterns and relationships. These steps highlight key factors influencing neighborhood safety. </p>
-									<li><b>Predictive Modeling and Insights</b></li>	
-									<p>This phase focuses on applying predictive models to identify trends or determine why some areas are safer than others. These insights can inform users about factors impacting safety and provide recommendations for risk mitigation.</p>
+									<li><b>Data-Driven Insights</b></li>
+									<p>We've created a comprehensive safety dataset that goes beyond surface-level statistics. By applying advanced analysis techniques, we're uncovering the complex factors that shape neighborhood safety.</p>
+									<li><b>Predictive Modeling Framework</b></li>
+									<p>We've laid the groundwork for something revolutionary - a system that can actually predict and understand safety trends.</p>
+									<li><b>Data Management Mastery</b></li>
+									<p>Throughout this journey, we've developed robust data pipelines and storage solutions that can handle complex urban safety information.</p>
+									<li><b>Future-Ready Platform</b></li>
+									<p>This isn't just a project - it's the foundation for a new way of thinking about urban safety. Interactive maps, real-time notifications, actionable insights - the potential is enormous.</p>
 								</ol>
-							</section>
-							<section id="Solution" class="main">
-								<h2>Challenges and Lessons Learned</h2>
+								<h3><b>Next Steps</b></h3>
 								<ol>
-									<li><b>Data Cleaning</b></li>
-									<p>Ensuring data consistency and accuracy proved challenging due to missing entries, inconsistent formats, and irrelevant information. Developing an efficient cleaning pipeline was essential to maintain the integrity of the analysis.</p>
-									<li><b>Finding Appropriate Data</b></li>
-									<p>Identifying relevant, high-quality datasets was another challenge. Not all data sources contained the level of detail or reliability required for meaningful insights, making it crucial to vet and curate information carefully.</p>
-									<li><b>Selecting the Correct Storage Medium and Database</b></li>
-									<p>Determining the optimal storage solution for the project's data needs was a key learning experience. Balancing accessibility, performance, and scalability led to valuable insights on database design and management for data-intensive applications.</p>
+									<li><b>Advanced Predictive Modeling</b></li>
+									<p>We're going to dig deeper, using machine learning to create predictive safety scores. Imagine understanding not just where risks exist, but why they exist.</p>
+									<li><b>User Interface Revolution</b></li>
+									<p>Time to make safety data truly accessible. We're designing an intuitive app that turns complex data into simple, actionable advice.</p>
+									<li><b>Community Collaboration</b></li>
+									<p>Safety is a community effort. We'll be reaching out to local authorities, neighborhood groups, and citizens to create a more comprehensive safety picture.</p>
+									<li><b>Real-World Testing</b></li>
+									<p>No more working in a vacuum. We'll launch a pilot version and get real feedback from the people who matter most - the community.</p>
+									<li><b>Scaling Up</b></li>
+									<p>This is just the beginning. Our vision is to expand beyond Toronto, creating a scalable platform that can help urban residents everywhere feel more secure.</p>
 								</ol>
-							</section>
-							<section id="Next Steps" class="main">
-								<h2>Outcomes and Next Steps</h2>
-									<p>Still in progress!</p>
-									<!-- <h3><b>Outcomes</b></h3>
-									<ol>
-										<li><b>Data-Driven Insights</b></li>
-										<p>Developed a structured dataset from multiple sources (Toronto Police and Open Data Portal), enabling neighborhood-level safety analysis. Identified key factors and correlations influencing neighborhood safety using feature engineering, heat maps, and other techniques.</p>
-										<li><b>Framework for Predictive Modeling</b></li>
-										<p>Built the foundation for predictive analytics to identify trends and forecast safety conditions in Toronto neighborhoods.</p>
-										<li><b>Improved Data Management Skills</b></li>
-										<p>Successfully implemented data pipelines and explored solutions for data storage, improving the overall system's scalability and efficiency.</p>
-										<li><b>Foundation for User-Centric Applications</b></li>
-										<p>Established groundwork for future tools, such as interactive safety maps and real-time notifications, to make insights actionable for users.</p>
-									</ol>
-									<h3><b>Next Steps</b></h3>
-									<ol>
-										<li><b>Implement Predictive Modeling</b></li>
-										<p>Use machine learning models to predict safety scores or risk zones based on historical data and real-time trends. Explore why certain areas are safer by incorporating socioeconomic, demographic, and environmental factors into the models.</p>
-										<li><b>User Interface Development</b></li>
-										<p>Design and build an intuitive user interface (web or mobile app) to allow users to interact with safety insights. Include real-time alerts and route suggestions for safer travel.</p>
-										<li><b>Partnerships and Data Integration</b></li>
-										<p>Collaborate with local authorities, neighborhood associations, and public safety organizations to access more granular and timely data. Integrate community-sourced data (e.g., reports from citizens) to improve accuracy and responsiveness.</p>
-										<li><b>Pilot Testing and Feedback Collection</b></li>
-										<p>Launch a pilot version of safeTO in selected neighborhoods for real-world testing. Gather feedback from users and stakeholders to refine the features and improve accuracy.</p>
-										<li><b>Scalability and Expansion</b></li>
-										<p>Plan for scaling the platform to cover more cities or integrate with larger safety initiatives. Optimize the backend for increased data volume and computational demands.</p>
-									</ol> -->
-							</section>
-					</div>
+						</section>
+				</div>
 
 			</div>
 
