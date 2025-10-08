@@ -19,73 +19,58 @@
 					<p>multiple full data engineering pipelines.</p>
 				</header>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- <section id="Summary">
-							<h3>Summary</h3>
-							<ul>Tech Stack: Python, TensorFlow, Pandas, Seaborn, JupyterLab</ul>
-							<ul>Impact: What does it do here? </ul>
-						</section> -->
-						<!-- Content -->
-						<section id="Problem" class="main">
-							<span class="image main"><img src="images/bg2.jpg" alt="" /></span>
-							<h2>Problem</h2>
-								<p>High-performance systems often face challenges in optimizing scheduling under uncertainty, where processing times are not deterministic. Traditional methods struggle to maintain efficiency in the presence of variable workloads, leading to suboptimal resource utilization and increased latency. The need to develop robust scheduling strategies for stochastic environments is critical to improving system performance.</p>
-							</section>
-							<section id="Approach" class="main">
-								<h2>Approach</h2>
-								<ol>
-									<li><b>Study of Existing Scheduling Policies</b></li>
-									<p>Conduct an in-depth review of existing algorithms, focusing on SRPT (Shortest Remaining Processing Time) and SERPT (Shortest Estimated Remaining Processing Time) and its behavior under stochastic workloads.</p>
-									<li><b>Simulation Development</b></li>
-									<p>Built a simulation framework to evaluate scheduling strategies. This includes incorporating variability in processing time estimates using controlled scaling factors.</p>
-									<li><b>Impact Analysis</b></li>
-									<p>Analyzed the effects of underestimations and overestimations of processing times on system performance metrics such as latency and throughput.</p>
-									<li><b>Algorithm Refinement</b></li>
-									<p>Iteratively refined machine learning model based on simulation results, optimizing for conditions where input estimates could be noisy or incomplete.</p>
-								</ol>
-							</section>
-							<section id="Challenges and Lessons Learned" class="main">
-								<h2>Challenges and Lessons Learned</h2>
-								<ol>
-									<li><b>Managing Variability</b></li>
-									<p>Estimating the impact of processing time inaccuracies required carefully designing experiments to isolate specific behaviors.</p>
-									<li><b>Computational Complexity</b></li>
-									<p>Simulating large-scale stochastic systems was resource-intensive, necessitating optimization of the simulation code to reduce runtime.</p>
-									<li><b>Interpretation of Results</b></li>
-									<p>Understanding the interplay between scheduling decisions and system performance in stochastic environments presented a steep learning curve.</p>
-								</ol>
-							</section>
-							<section id="Outcomes and Next Steps" class="main">
-								<h2>Outcomes and Next Steps</h2>
-								<p>Saved our company around $220M when considering further optimizations.</p>
-								<!-- <h3>Outcomes</h3>
-								<ol>
-									<li><b>Developed Advanced Scheduling Models</b></li>
-									<p>Designed and analyzed scheduling algorithms such as SRPT for stochastic systems, considering variability in job size estimates.</p>
-									<li><b>Impact Analysis of Estimate Errors</b></li>
-									<p>Evaluated the effects of underestimations and overestimations in processing time predictions on system performance.</p>
-									<li><b>Simulation Framework</b></li>
-									<p>Built a simulation environment to test scheduling policies under varying stochastic conditions, enabling validation and performance tuning.</p>
-									<li><b>Insights into System Behavior</b></li>
-									<p>Generated actionable insights into how inaccuracies in processing time estimation affect scheduling efficiency and overall system behavior.</p>
-								</ol>
-								<h3>Next Steps</h3>
-								<ol>
-									<li><b>Refine Scheduling Algorithms</b></li>
-									<p>Optimize algorithms to handle a wider range of stochastic workloads, focusing on resilience to estimation errors and dynamic changes in system conditions.</p>
-									<li><b>Expand Analytical Models</b></li>
-									<p>Develop mathematical models to better understand the interplay between scheduling policies, variability, and system performance.</p>
-									<li><b>Real-World Integration</b></li>
-									<p>Collaborate with industry partners to apply scheduling techniques in real-world stochastic systems, such as cloud computing or manufacturing.</p>
-									<li><b>Publish Findings</b></li>
-									<p>Share insights through academic papers, workshops, or conferences to contribute to the field of high-performance scheduling.</p>
-									<li><b>Generalization and Scalability</b></li>
-									<p>Extend findings to other scheduling paradigms and large-scale systems to ensure broad applicability and scalability.</p>
-								</ol> -->
-							</section>
-					</div>
+				<div id="main">
+					<section id="Problem" class="main">
+						<span class="image main"><img src="images/bg2.jpg" alt="" /></span>
+						<h2>Problem</h2>
+						<p>
+							Legacy on-prem data pipelines and monolithic ETL scripts were causing high compute costs, fragile
+							data workflows, and slow analytics turnaround. The organization needed a scalable, governable
+							cloud-based solution to process high-volume data reliably while reducing cost and enabling
+							self-serve analytics.
+						</p>
+					</section>
 
+					<section id="Approach" class="main">
+						<h2>Approach</h2>
+						<ol>
+							<li><b>Build high-throughput ETL pipelines</b>
+								<p>Developed <b>3 Spark-based ETL pipelines</b> orchestrated with Airflow to reliably process <b>500M+ daily rows</b>, focusing on compute efficiency and robust failure handling.</p>
+							</li>
+							<li><b>Replatform & modernize</b>
+								<p>Replatformed <b>80+ datasets</b> and refactored <b>70+ legacy scripts</b> from on-prem MSSQL/Oracle to GCP (BigQuery/Dataproc), optimizing storage and query performance with columnar formats (Parquet) and schema improvements.</p>
+							</li>
+							<li><b>Embed data quality and governance</b>
+								<p>Introduced dbt and Great Expectations to automate data validation and lineage checks, turning reporting pipelines into analytics-ready data products and improving trust in downstream models.</p>
+							</li>
+						</ol>
+					</section>
+
+					<section id="Challenges and Lessons Learned" class="main">
+						<h2>Challenges & Lessons Learned</h2>
+						<ol>
+							<li><b>Migration complexity</b>
+								<p>Mapping legacy schemas and ETL logic to modern BigQuery models required careful refactor planning and cross-team coordination to avoid data regressions.</p>
+							</li>
+							<li><b>Cost vs. performance tradeoffs</b>
+								<p>Balancing compute cost, latency, and maintainability led to targeted optimizations (e.g., partitioning, Parquet layout, and Spark tuning) rather than one-size-fits-all changes.</p>
+							</li>
+							<li><b>Operationalizing quality</b>
+								<p>Embedding automated tests and lineage into CI/CD pipelines reduced firefighting but required investment in test design and clear SLAs for dataset owners.</p>
+							</li>
+						</ol>
+					</section>
+
+					<section id="Outcomes and Next Steps" class="main">
+						<h2>Outcomes & Next Steps</h2>
+						<ul>
+							<li><b>Impact:</b> Reduced compute time by <b>92%</b>, saving an estimated <b>$220K annually</b>, while processing 500M+ daily rows.</li>
+							<li><b>Operational gains:</b> Replatforming and refactoring cut storage by <b>~2.5 TB</b> and improved maintainability across 80+ datasets.</li>
+							<li><b>Data trust:</b> Data quality automation (dbt + Great Expectations) increased confidence in analytics and shortened time-to-insight for downstream teams.</li>
+							<li><b>Next steps:</b> Expand CDC-based ingestion for near-real-time analytics, evaluate Iceberg for time-travel and schema evolution, and scale the data quality framework across additional domains.</li>
+						</ul>
+					</section>
+				</div>
 			</div>
 
 			<div style="height: 4rem;"></div>
